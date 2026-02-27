@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  style="margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV – Alex Romanova</title>
+  </head>
+  <body
+    style="margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4"
+  >
+    <div
+      style="
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px 40px;
+      "
+    >
+      <header style="text-align: center; padding: 20px 0">
+        <h1 style="margin-bottom: 10px">Alex Romanova</h1>
+        <img
+          src="photo.jpg"
+          alt="Profile photo"
+          style="width: 120px; border-radius: 50%"
+        />
+        <p>Software Engineering Student</p>
+      </header>
+      <nav>
+        <ul
+          style="
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+          "
+        >
+          <li>
+            <a href="#about" style="text-decoration: none; color: #0077cc"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a href="#skills" style="text-decoration: none; color: #0077cc"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#code" style="text-decoration: none; color: #0077cc"
+              >Code</a
+            >
+          </li>
+          <li>
+            <a href="#projects" style="text-decoration: none; color: #0077cc"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#education" style="text-decoration: none; color: #0077cc"
+              >Courses</a
+            >
+          </li>
+          <li>
+            <a href="#english" style="text-decoration: none; color: #0077cc"
+              >English</a
+            >
+          </li>
+          <li>
+            <a href="#contacts" style="text-decoration: none; color: #0077cc"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="about" style="margin-bottom: 30px">
+          <h2 style="padding-bottom: 5px">About Me</h2>
+          <hr style="border: none; background-color: #ccc; height: 2px" />
+          <p>
+            Motivated software engineering student with a interest in web
+            development and backend systems. I am eager to learn new
+            technologies, improve my programming skills, and work on real-world
+            projects. Responsible, detail-oriented and a fast learner.
+          </p>
+        </section>
+
+        <section id="skills" style="margin-bottom: 30px">
+          <h2 style="padding-bottom: 5px">Skills</h2>
+          <hr style="border: none; background-color: #ccc; height: 2px" />
+          <ul style="padding-left: 20px">
+            <li>Languages: C#, JavaScript, HTML, CSS</li>
+            <li>Frameworks: .NET</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Tools: VS Code, Visual Studio</li>
+          </ul>
+        </section>
+
+        <section id="code" style="margin-bottom: 30px">
+          <h2 style="padding-bottom: 5px">Code Example</h2>
+          <hr style="border: none; background-color: #ccc; height: 2px" />
+          <pre
+            style="
+              background: #272822;
+              color: #f8f8f2;
+              padding: 15px;
+              overflow-x: auto;
+            "
+          ><code>
+static double FuzzyMatch(string search, string target, double threshold = 0.3)
+{
+    search = search.ToLower();
+    target = target.ToLower();
+    if (target.Contains(search))
+        return 1;
+    if (search.Length &lt;= 3 && target.EndsWith(search))
+        return 1;
+    double ngramSim = NGramSimilarity(search, target, 2);
+    if (ngramSim >= threshold)
+        return ngramSim;
+    return 0;
+}
+
+static double NGramSimilarity(string s1, string s2, int n = 2)
+{
+    var ngrams1 = Enumerable.Range(0, s1.Length - n + 1).Select(i => s1.Substring(i, n));
+    var ngrams2 = Enumerable.Range(0, s2.Length - n + 1).Select(i => s2.Substring(i, n));
+    var common = ngrams1.Intersect(ngrams2).Count();
+    return (double)common / Math.Max(ngrams1.Count(), ngrams2.Count());
+}
+          </code></pre>
+        </section>
+
+        <section id="projects" style="margin-bottom: 30px">
+          <h2 style="padding-bottom: 5px">Projects</h2>
+          <hr style="border: none; background-color: #ccc; height: 2px" />
+          <ol style="padding-left: 20px">
+            <li>
+              <strong>Student Assistant Web App</strong> – Attendance tracking
+              system. Skills used: HTML, CSS, JavaScript, backend integration.
+              <a
+                href="https://github.com/AlexRomanova/Group-monitor.git"
+                style="color: #0077cc; text-decoration: none"
+                >GitHub Repository</a
+              >
+            </li>
+            <li>
+              <strong>Personal CV Website</strong> – This CV page
+              <a href="#" style="color: #0077cc; text-decoration: none"
+                >Project Page</a
+              >
+            </li>
+          </ol>
+        </section>
+
+        <section id="education" style="margin-bottom: 30px">
+          <h2 style="padding-bottom: 5px">Courses & Training</h2>
+          <hr style="border: none; background-color: #ccc; height: 2px" />
+          <ul style="padding-left: 20px">
+            <li>HTML ans CSS</li>
+            <li>JavaScript for beginers</li>
+            <li>C# programming</li>
+            <li>Web Development Basics</li>
+            <li>Object-Oriented Programming</li>
+            <li>Git & GitHub Course</li>
+            <li>Data Bases</li>
+          </ul>
+        </section>
+
+        <section id="english" style="margin-bottom: 30px">
+          <h2 style="padding-bottom: 5px">English Level</h2>
+          <hr style="border: none; background-color: #ccc; height: 2px" />
+          <p>
+            Intermediate (B1–B2). Practiced English through real life
+            conversations, Youtube content and technical documentation.
+          </p>
+        </section>
+
+        <section id="contacts" style="margin-bottom: 30px">
+          <h2 style="padding-bottom: 5px">Contacts</h2>
+          <hr style="border: none; background-color: #ccc; height: 2px" />
+          <ul style="padding-left: 20px">
+            <li>Email: romanova.aleksandra943@gmail.com</li>
+            <li>
+              <a
+                href="https://github.com/AlexRomanova"
+                style="color: #0077cc; text-decoration: none"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer
+        style="
+          text-align: center;
+          padding: 20px 0;
+          font-size: 14px;
+          color: gray;
+        "
+      >
+        <p>© 2026 Alex Romanova</p>
+      </footer>
+    </div>
+  </body>
+</html>
