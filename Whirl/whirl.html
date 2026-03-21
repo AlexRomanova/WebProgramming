@@ -7,109 +7,131 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      A Webflow template for SaaS products. <a href="" A>See all templates ></a>
+    <div class="topbar">
+      <p class="topbar__text">
+        A Webflow template for SaaS products.
+        <a href="#" class="topbar__link">See all templates ></a>
+      </p>
     </div>
-    <header>
-      <div>
-        <div><img src="images/Whirl_header.svg" alt="" /></div>
-        <div><a href="">Features</a></div>
-        <div><a href="">Pricing</a></div>
-        <div><a href="">Integrations</a></div>
-        <div><a href="">Learn</a></div>
-      </div>
-      <div>
-        <div><a href="">Sign in</a></div>
-        <button><a href="">Book a demo</a></button>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__left">
+          <img src="images/Whirl_header.svg" alt="" />
+          <nav class="nav">
+            <a href="#" class="nav__link">Features</a>
+            <a href="#" class="nav__link">Pricing</a>
+            <a href="#" class="nav__link">Integrations</a>
+            <a href="#" class="nav__link">Learn</a>
+          </nav>
+        </div>
+        <div class="header__right">
+          <a href="#" class="header__login">Sign in</a>
+          <a href="#" class="btn btn--primary">Book a demo</a>
+        </div>
       </div>
     </header>
-    <main>
-      <section>
-        <div><h2>Your everyday tasks, automated.</h2></div>
-        <div>
-          Whirl lets you design and streamline your everyday tasks and workflows
-          in just a few clicks.
-        </div>
-        <button><a href="">Book a demo</a></button>
-        <div>
-          <a href=""
-            >Learn more <img src="/Whirl/images/IMAGE (26).svg" alt=""
-          /></a>
-        </div>
-        <div><img src="images/IMAGE.svg" alt="" /></div>
-      </section>
-      <section>
-        <div>Trusted by 50,000+ companies</div>
-        <div>
-          <div><img src="images/IMAGE (25).svg" alt="" /></div>
-          <div><img src="images/IMAGE (24).svg" alt="" /></div>
-          <div><img src="images/IMAGE (23).svg" alt="" /></div>
-          <div><img src="images/IMAGE (22).svg" alt="" /></div>
-        </div>
-      </section>
-      <section>
-        <div>
-          <div><img src="images/IMAGE (21).svg" alt="" /></div>
-          <div>Fast. Really fast.</div>
-          <div>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
+
+    <main class="main">
+      <section class="automated">
+        <div class="container automated_inner">
+          <div class="automated_content">
+            <h1 class="automated_title">Your everyday tasks, automated.</h1>
+            <p class="automated_text">
+              Whirl lets you design and streamline your everyday tasks and
+              workflows in just a few clicks.
+            </p>
+            <div class="automated_actions">
+              <a href="#" class="btn btn--primary">Book a demo</a>
+              <a href="#"
+                >Learn more <img src="/Whirl/images/IMAGE (26).svg" alt=""
+              /></a>
+            </div>
           </div>
-        </div>
-        <div>
-          <div><img src="images/IMAGE (20).svg" alt="" /></div>
-          <div>More bang for buck.</div>
-          <div>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </div>
-        </div>
-        <div>
-          <div><img src="images/IMAGE (19).svg" alt="" /></div>
-          <div>Safe and secure.</div>
-          <div>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
+          <div class="automated_image">
+            <img src="images/IMAGE.svg" alt="" />
           </div>
         </div>
       </section>
-      <section>
-        <div>
+
+      <section class="trusted">
+        <div class="container">
+          <p class="trusted_title">Trusted by 50,000+ companies</p>
+          <div class="trusted_logos">
+            <div><img src="images/IMAGE (25).svg" alt="" /></div>
+            <div><img src="images/IMAGE (24).svg" alt="" /></div>
+            <div><img src="images/IMAGE (23).svg" alt="" /></div>
+            <div><img src="images/IMAGE (22).svg" alt="" /></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container features">
+          <div class="feature">
+            <img src="images/IMAGE (21).svg" alt="" class="feature__icon" />
+            <h3 class="feature__title">Fast. Really fast.</h3>
+            <p class="feature__text">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="images/IMAGE (20).svg" alt="" class="feature__icon" />
+            <h3 class="feature__title">More bang for buck.</h3>
+            <p class="feature__text">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
           <div>
-            <h2>
+            <img src="images/IMAGE (19).svg" alt="" class="feature__icon" />
+            <h3 class="feature__title">Safe and secure.</h3>
+            <p class="feature__text">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="takecare">
+        <div class="container takecare_inner">
+          <div class="takecare__content">
+            <h2 class="takecare_title">
               We will take care of everything, so you can get back to relaxing.
             </h2>
-          </div>
-          <div>
+            <div class="takecare__items">
+              <div class="takecare__item">
+                <img src="images/IMAGE (18).svg" alt="" />
+                <span>Anti-loss technology</span>
+                <button><img src="images/IMAGE (14).svg" alt="" /></button>
+              </div>
+              <p class="takecare__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
             <div>
-              <div><img src="images/IMAGE (18).svg" alt="" /></div>
-              <div>Anti-loss technology</div>
+              <img src="images/IMAGE (17).svg" alt="" />
+              <span>Exchange easily</span>
               <button><img src="images/IMAGE (14).svg" alt="" /></button>
             </div>
             <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <div><img src="images/IMAGE (16).svg" alt="" /></div>
+              <span>Fully encrypted</span>
+              <button><img src="images/IMAGE (14).svg" alt="" /></button>
+            </div>
+            <div>
+              <div><img src="images/IMAGE (15).svg" alt="" /></div>
+              <span>Plenty of options</span>
+              <button><img src="images/IMAGE (14).svg" alt="" /></button>
             </div>
           </div>
-          <div>
-            <div><img src="images/IMAGE (17).svg" alt="" /></div>
-            <div>Exchange easily</div>
-            <button><img src="images/IMAGE (14).svg" alt="" /></button>
-          </div>
-          <div>
-            <div><img src="images/IMAGE (16).svg" alt="" /></div>
-            <div>Fully encrypted</div>
-            <button><img src="images/IMAGE (14).svg" alt="" /></button>
-          </div>
-          <div>
-            <div><img src="images/IMAGE (15).svg" alt="" /></div>
-            <div>Plenty of options</div>
-            <button><img src="images/IMAGE (14).svg" alt="" /></button>
-          </div>
+          <img src="images/IMAGE (13).svg" alt="" />
         </div>
-        <div><img src="images/IMAGE (13).svg" alt="" /></div>
       </section>
-      <section>
+
+      <section class="whirlabout">
         <div><h2>What's Whirl all about?</h2></div>
         <div>
           <div>All on one place.</div>
@@ -136,7 +158,8 @@
           </div>
         </div>
       </section>
-      <section>
+
+      <section class="tracker">
         <div><img src="images/IMAGE (11).svg" alt="" /></div>
         <div><h2>Set, forget, and then track.</h2></div>
         <div>
@@ -155,9 +178,10 @@
           <div><img src="images/IMAGE (6).svg" alt="" /></div>
           <div>You own the shares</div>
         </div>
-        <button><a href="">Book a demo</a></button>
+        <button><a href="#">Book a demo</a></button>
       </section>
-      <section>
+
+      <section class="tasks">
         <div><h2>Your tasks, automated.</h2></div>
         <div>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -199,7 +223,8 @@
           </div>
         </div>
       </section>
-      <section>
+
+      <section class="whirlblog">
         <div>
           <h2>Get smarter, with our blog.</h2>
           <div>See All Posts</div>
@@ -237,23 +262,28 @@
           </div>
         </div>
       </section>
-      <section>
+
+      <section class="cta">
         <div>Get started with Whirl</div>
         <div>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.
         </div>
-        <button><a href="">Book a demo</a></button>
+        <button><a href="#">Book a demo</a></button>
         <div>Free 30-day trial</div>
         <div>No credit-card required</div>
       </section>
-      <section></section>
     </main>
-    <footer>
+
+    <footer class="footer">
       <div>
         <img src="images/IMAGE (5).svg" alt="" />
-        <div>Built by <a href="">Nikolai Bain</a>.</div>
-        <div>Powered by <a href="">Webflow</a>.</div>
+        <div>
+          <p>Built by <a href="#">Nikolai Bain</a>.</p>
+        </div>
+        <div>
+          <p>Powered by <a href="#">Webflow</a>.</p>
+        </div>
       </div>
       <div>
         <div>Info</div>
@@ -285,10 +315,12 @@
       </div>
       <div>
         © 2022 Whirl. All Rights Reserved. Illustrations by
-        <a href="">Streamline</a>.
-        <img src="images/IMAGE (3).svg" alt="" />
-        <img src="images/IMAGE (2).svg" alt="" />
-        <img src="images/IMAGE (1).svg" alt="" />
+        <a href="#">Streamline</a>.
+        <div>
+          <img src="images/IMAGE (3).svg" alt="" />
+          <img src="images/IMAGE (2).svg" alt="" />
+          <img src="images/IMAGE (1).svg" alt="" />
+        </div>
       </div>
     </footer>
   </body>
