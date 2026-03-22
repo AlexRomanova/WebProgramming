@@ -1,0 +1,15 @@
+:root{
+	--bg-main: #FFFFFF;
+	--bg-secondary:#F7F9FA;
+	--blue: #0070A0;
+	--link-topbar:#CCE5F3;
+	--link-header:#33383F;
+	--main-text:#1F1F1F;
+	--bg-feature-speed:#FAEA73;
+	--bg-feature-value:#CCEFF5;
+	--bg-feature-security:#F7CEDC;
+	--hl:#C2CDD8;
+	--bg-blog-tag:#E6F7FF;
+	--blog-tag:#2C90C9;
+	--footer:#626A72;
+}
