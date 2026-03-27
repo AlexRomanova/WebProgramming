@@ -26,7 +26,6 @@
 .topbar {
   background-color: var(--blue);
   width: 100%;
-  height: 43px;
   display: flex;
   justify-content: center;
 }
@@ -34,17 +33,12 @@
 .topbar__inner {
   display: flex;
   width: 402px;
-  height: 43px;
   padding: 12px 0 11px 0;
   justify-content: center;
   align-items: flex-start;
 }
 
 .topbar__text {
-  box-sizing: border-box;
-  padding-top: 0.5px;
-  padding-left: 3px;
-  width: 275px;
   flex-shrink: 0;
   color: var(--bg-main);
   text-align: center;
@@ -57,9 +51,6 @@
 }
 
 .topbar__link {
-  box-sizing: border-box;
-  padding-top: 1px;
-  width: 128px;
   flex-shrink: 0;
   text-align: center;
   font-family: Inter;
@@ -74,17 +65,15 @@
 
 .header {
   background-color: var(--bg-main);
-  height: 75px;
-  width: 1440px;
+  width: 100%;
   top: 43px;
 }
 
 .header__inner {
   box-sizing: border-box;
   display: flex;
-  height: 75px;
   padding: 19px 50px;
-  margin: 0 105px 0 105px;
+  margin: 0 105px;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 24px;
@@ -96,7 +85,8 @@
 }
 
 .header__bar {
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   display: flex;
   height: 36px;
   justify-content: space-between;
@@ -107,12 +97,11 @@
 .nav__list {
   width: 345px;
   box-sizing: border-box;
-  height: 36px;
-  display: inline-grid;
+  display: grid;
   grid-template-columns: 64px 51px 89px 72px;
   align-items: center;
   gap: 25px;
-  padding: 5px 12px;
+  padding: 6px 12px;
 }
 
 .nav__link {
@@ -135,7 +124,6 @@
 
 .header__login {
   flex-shrink: 0;
-
   box-sizing: border-box;
   padding: 6px 20px 6px 19px;
   width: 89px;
@@ -180,7 +168,6 @@
 
 .hero__inner {
   width: 1130px;
-  height: 433.578125px;
   margin: 70px 155px 50.42px 155px;
   display: flex;
   justify-content: space-between;
@@ -196,7 +183,6 @@
   box-sizing: border-box;
   padding-top: 1px;
   width: 485px;
-  height: 128px;
   font-family: Fraunces;
   font-size: 58px;
   font-weight: 400;
@@ -207,7 +193,6 @@
 
 .hero__text {
   width: 351px;
-  height: 90px;
   padding-top: 19px;
   color: var(--main-text);
   font-family: Inter;
@@ -294,7 +279,6 @@
 .trusted__logos {
   margin-left: 2px;
   display: flex;
-  height: 35.813px;
   justify-content: flex-end;
   align-items: center;
   gap: 61px;
@@ -303,10 +287,10 @@
 
 .features {
   width: 1130px;
-  height: 250px;
   margin-top: 165px;
   margin-left: 154px;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -346,7 +330,6 @@
 }
 
 .feature__title {
-  height: 32px;
   margin-top: 5px;
   color: var(--main-text);
   font-family: Fraunces;
@@ -371,7 +354,6 @@
 
 .benefits {
   width: 1440px;
-  height: 694px;
   background: var(--bg-secondary);
   margin-top: 119px;
 }
@@ -420,7 +402,6 @@
   margin-left: 18px;
   margin-top: 26.5px;
   width: 485.828px;
-  height: 345px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -506,4 +487,82 @@
 .benefits__toggle img {
   width: 18px;
   height: 10px;
+}
+
+.about__inner {
+  margin: 117px 155px 123px 155px;
+  display: flex;
+  width: 1130px;
+  height: 218px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about__title {
+  color: var(--main-text);
+  font-family: Fraunces;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50.4px;
+  letter-spacing: 0.2px;
+}
+
+.about__title-line {
+  display: block;
+}
+
+.about__title-line:last-child {
+  font-size: 41px;
+  letter-spacing: 0.5px;
+}
+
+.about__grid {
+  display: flex;
+  width: 732px;
+  height: 218px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+}
+
+.about__item {
+  box-sizing: border-box;
+  padding-right: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 223px;
+}
+
+.about__item img {
+  width: 55px;
+  height: 55px;
+}
+
+.about__item__title {
+  margin-top: 9px;
+  color: var(--main-text);
+  font-family: Fraunces;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.25px; /* 125% */
+  letter-spacing: 0.2px;
+}
+
+.about__item__text {
+  margin-top: 12px;
+  color: var(--main-text);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.2px;
+}
+
+.about__item:nth-child(2) .about__item__text {
+  font-size: 16px;
+  letter-spacing: 0.2px;
 }
